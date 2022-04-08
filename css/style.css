@@ -57,6 +57,9 @@ body {
   color: #FFFFFF;
   margin-right: 10px;
 }
+.button-card-text {
+  margin-right: 10px;
+}
 .button-icon {
   margin-right: 6px;
 }
@@ -98,12 +101,14 @@ body {
 .input-search {
   background-image: url(../img/search.svg);
   width: 300px;
+  margin-left: auto;
 }
 .section-heading {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-bottom: 44px;
+  margin-top: 30px;
 }
 .section-title {
   font-weight: 700;
@@ -111,6 +116,7 @@ body {
   line-height: 42px;
   color: #000000;
   margin: 0;  
+  margin-right: 30px;
 }
 
 /* end restaurants section */
@@ -150,6 +156,9 @@ body {
   color: #000000;
   margin: 0;
 }
+.card-title-reg {
+  font-weight: 400;
+}
 .card-tag {
   font-family: 'SF Pro Display';
   font-style: normal;
@@ -165,6 +174,11 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.card-buttons {
+  display: flex;
+  align-items: center;
 }
 .rating {
   margin-right: 26px;
@@ -187,6 +201,12 @@ body {
   overflow: hidden;
   white-space: nowrap;
 }
+.ingredients {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8C8C8C;
+}
 .price:after {
   content: "";
   width: 5px;
@@ -196,6 +216,13 @@ body {
   vertical-align: middle;
   border-radius: 50%;
   margin-left: 10px;
+}
+.card-price-bold {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+  margin-left: 25px;
 }
 
 /* footer */
@@ -236,7 +263,7 @@ body {
   }
   .promo {
     background-size: 750px;
-    background-position: center top right -300px;
+    background-position: center right -270px;
   }
   .rating {
     margin-right: 15px;
@@ -325,5 +352,55 @@ body {
   }
   .card-image {
     width: 100%;
+  }
+  .footer {
+    padding: 30px;
+  }
+  .footer-block {
+    align-items: flex-start;
+  }
+  .footer-nav {
+    order: 0;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-logo {
+    order: 1;
+    margin-right: 15px;
+  }
+  .social-links {
+    order: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-icon {
+    margin: 0;
+  }
+  .promo {
+    padding: 20px;
+  }
+  .section-heading {
+    flex-wrap: wrap;
+  }
+  .footer-block {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo {
+    order: 0;
+    margin-bottom: 20px;
+  }
+  .footer-nav {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 355px) {
+  .button-text {
+    display: none;
   }
 }
