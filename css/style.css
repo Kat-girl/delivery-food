@@ -134,12 +134,16 @@ body {
   border-radius: 7px;
   overflow: hidden;
   margin-bottom: 30px;
-  flex-basis: 31%;
+  flex-basis: 32%;
+  text-decoration: none;
 }
 .card-image {
   width: 384px;
   height: 250px;
   object-fit: cover;
+}
+.card-image-restaurant {
+  width: 100%;
 }
 .card-text {
   padding: 20px 23px 34px 24px;
@@ -174,11 +178,11 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 24px;
 }
 .card-buttons {
   display: flex;
   align-items: center;
+  margin-top: 24px;
 }
 .rating {
   margin-right: 26px;
@@ -196,7 +200,7 @@ body {
 .price {
   margin-right: 10px;
 }
-.category {
+.category, .ingredients, .card-title-reg {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -301,14 +305,17 @@ body {
   .input-address {
     max-width: 35%;
   }
-  .rating {
+  .card .rating {
     flex-basis: 100%;
   }
   .card-info {
     flex-wrap: wrap;
   }
-  .card-title {
+  .card-title, .card-title-reg {
     font-size: 18px;
+  }
+  .card-price-bold {
+    font-size: 17px;
   }
   .promo-title {
     font-size: 24px;
@@ -402,5 +409,8 @@ body {
 @media (max-width: 355px) {
   .button-text {
     display: none;
+  }
+  .card-price-bold {
+    font-size: 14px;
   }
 }
