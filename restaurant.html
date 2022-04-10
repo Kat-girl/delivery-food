@@ -13,11 +13,15 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <a href="index.html" class="logo">
+        <a href="index.html" class="logo animate__animated animate__pulse">
           <img src="img\logo.svg" alt="Logo" class="logo" />
         </a>
         <input
@@ -30,7 +34,7 @@
             <img src="img/user.svg" alt="user" class="button-icon" />
             <span class="button-text">Войти</span>
           </button>
-          <button class="button">
+          <button class="button" id="cart-button">
             <img src="img/shopping-cart.svg" alt="cart" class="button-icon" />
             <span class="button-text">Корзина</span>
           </button>
@@ -322,8 +326,15 @@
             </div>
           </div>
         </div>
-        <div class="modal-footer"></div>
+        <div class="modal-footer">
+          <span class="modal-pricetag">1250 ₽</span>
+          <div class="footer-buttons">
+            <button class="button button-primary">Оформить заказ</button>
+            <button class="button">Отмена</button>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
