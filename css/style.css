@@ -486,6 +486,12 @@ body {
   .social-links {
     order: 2;
   }
+  .food-name, .food-price {
+    font-size: 16px;
+  }
+  .food-price {
+    margin-right: 25px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -509,6 +515,20 @@ body {
   }
   .footer-nav {
     margin-bottom: 20px;
+  }
+  .food-row {
+    flex-wrap: wrap;
+  }
+  .food-name,
+  .food-price {
+    font-size: 14px;
+  }
+  
+  .food-price {
+    margin-right: 15px;
+  }
+  .modal-footer {
+    flex-wrap: wrap;
   }
 }
 
