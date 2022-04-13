@@ -542,4 +542,7 @@ body {
   .card-price-bold {
     font-size: 14px;
   }
+  .modal-pricetag {
+    margin-bottom: 15px;
+  }
 }
